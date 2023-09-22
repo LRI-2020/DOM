@@ -12,11 +12,12 @@ let secondSection = document.querySelectorAll('section')[1];
 let h2ThirdSection = thirdSection.querySelector('h2');
 let h2SecondSection = secondSection.querySelector('h2');
 
-thirdSection.insertBefore(h2SecondSection,thirdSection.firstChild);
 secondSection.insertBefore(h2ThirdSection,secondSection.firstChild);
+
+thirdSection.firstElementChild.insertBefore(h2SecondSection,thirdSection.firstElementChild.firstElementChild);
 
 //remove last section
 
-let lastSection = document.querySelectorAll('section');
-lastSection[(lastSection.length)-1].remove();
-
+// let lastSection = document.querySelectorAll('section');
+// lastSection[(lastSection.length)-1].remove();
+//
