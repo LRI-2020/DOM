@@ -41,17 +41,16 @@ function isLightColor(color){
 }
 
 
-function rdm(min,max){
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-}
+// function rdm(max){
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+// }
 
 function createRdmRgb(){
 
-    let r = rdm(0,256);
-    let g = rdm(0,256);
-    let b = rdm(0,256);
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
 
     return `rgb(${r},${g},${b})`;
 }
