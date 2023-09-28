@@ -5,3 +5,8 @@
 .error{
     border: 3px solid red;
 }
+
+.darkMode{
+    background-color: black;
+    color:white;
+}

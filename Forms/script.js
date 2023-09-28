@@ -1,4 +1,5 @@
-﻿let firstName = document.getElementById("firstname");
+﻿///////////////////////////////////////////////////////////// NAME
+let firstName = document.getElementById("firstname");
 
 firstName.addEventListener('keyup', function () {
 
@@ -6,6 +7,7 @@ firstName.addEventListener('keyup', function () {
     span.innerText = firstName.value;
 })
 
+///////////////////////////////////////////////////////////// AGE
 let age = document.getElementById("age");
 
 age.addEventListener('keyup', function () {
@@ -16,10 +18,8 @@ age.addEventListener('keyup', function () {
     } else {
         section.style.visibility = "hidden"
     }
-
-
-})
-
+});
+///////////////////////////////////////////////////////////// PASSWORDS
 
 let passwordInput = document.getElementById("pwd");
 let pwdConfirmInput = document.getElementById("pwd-confirm");
@@ -70,3 +70,16 @@ function UpdateStyle(element, styleType, styleDeclaration = null) {
     }
 }
 
+///////////////////////////////////////////////////////////// TOGGLE
+
+let select = document.getElementById("toggle-darkmode");
+
+select.addEventListener('change', function(){
+    if(select.value === "dark"){
+        document.querySelector('body').classList.add("darkMode");
+    }
+    
+    else{
+        document.querySelector('body').classList.remove("darkMode");
+    }
+})
