@@ -3,8 +3,6 @@ body.onload = function() {
     document.getElementById("firstname").value="";
 }
 
-
-
 ///////////////////////////////////////////////////////////// NAME
 let firstName = document.getElementById("firstname");
 
@@ -63,7 +61,7 @@ function CheckConfirmationInput(pwd, confirmation) {
 }
 
 
-function UpdateStyle(element, styleType, styleDeclaration = null) {
+function UpdateStyle(element, styleType) {
 
     switch (styleType.toLowerCase()) {
         case"ok":
