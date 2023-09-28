@@ -1,4 +1,11 @@
-﻿///////////////////////////////////////////////////////////// NAME
+﻿let body = document.querySelector("body");
+body.onload = function() {
+    document.getElementById("firstname").value="";
+}
+
+
+
+///////////////////////////////////////////////////////////// NAME
 let firstName = document.getElementById("firstname");
 
 firstName.addEventListener('keyup', function () {
