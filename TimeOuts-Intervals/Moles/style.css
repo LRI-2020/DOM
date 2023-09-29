@@ -1,0 +1,69 @@
+.moleCircle {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+}
+
+.section__gameWrapper {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    gap: 2rem;
+    width: fit-content;
+    padding: 1%;
+}
+
+h1, h2, h3, p {
+    display: inline;
+}
+
+.section__score {
+    margin:auto;
+
+}
+
+p {
+    font-size: 3vw;
+    padding-left:2%;
+}
+
+
+.moleCircle, .section__gameWrapper {
+    border: 2px solid black;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.win {
+    font-size: 7vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: auto;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.selected {
+    background-color: #f44336;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
