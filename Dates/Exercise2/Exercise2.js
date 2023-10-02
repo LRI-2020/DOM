@@ -10,7 +10,8 @@ let date = new Date(input[0], input[1] - 1, input[2]);
 displayNumberOfDays(date);
 
 function displayNumberOfDays(refDate, element) {
-    let currentElement = createElement("");
+    let currentElement = createElement("p");
+    currentElement.classList.add(`numberOfDaysSince__${refDate.toDateString().split(" ").join('')}`);
     currentElement.innerText = `There are  ${GetDays(refDate)} days passed since ${refDate}`
 }
 
