@@ -1,0 +1,25 @@
+﻿.card-header, .card-footer {
+    background-color: darkred;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: white;
+    color: grey;
+}
+
+.card-title{
+    font-size:4rem;
+    font-weight: bold;
+}
+
+.DateWrapper{
+    background-color: lightgray;
+}
+
+.timeText{
+    font-size:4rem;
+    font-weight: bold;
+}
