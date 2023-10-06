@@ -11,6 +11,6 @@ function LoadData(data){
         li.innerText = item;
         list.appendChild(li);
     }
-    
+
     document.querySelector('body').appendChild(list);
 }
